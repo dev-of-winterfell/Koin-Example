@@ -4,6 +4,7 @@ import com.example.koinexample.data.api.UserApi
 import com.example.koinexample.data.model.User
 import kotlinx.coroutines.delay
 
+
 class UserRepository(private val api:UserApi) {
     suspend fun getUser():Result<List<User>>{
         delay(2000)

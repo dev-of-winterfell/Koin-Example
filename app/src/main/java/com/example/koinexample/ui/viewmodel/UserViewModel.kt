@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
+
 class UserViewModel(private val repository: UserRepository):ViewModel() {
 
     private val _uiState = MutableStateFlow<UserUiState>(UserUiState.Loading)
